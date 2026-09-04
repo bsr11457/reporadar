@@ -1,7 +1,7 @@
 import io
 import zipfile
 import pytest
-from src.security import extract_zip_safely
+from security import extract_zip_safely
 
 def make_zip(name, data):
     buf = io.BytesIO()
