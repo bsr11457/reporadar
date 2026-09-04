@@ -52,7 +52,10 @@ def call_llm(provider, prompt):
         "temperature": 0.2,
     }
     response = requests.post(cfg["url"], headers=headers, json=payload, timeout=45)
-    response.raise_for_status()
+    if not response.ok:
+    raise RuntimeError(
+        f"Groq API error {response.status_code}: {response.text}"
+    )
     data = response.json()
     return data["choices"][0]["message"]["content"]
 
