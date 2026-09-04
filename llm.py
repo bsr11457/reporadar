@@ -10,7 +10,7 @@ PROVIDERS = {
     "Groq": {
         "key": "GROQ_API_KEY",
         "url": "https://api.groq.com/openai/v1/chat/completions",
-        "model": "llama-3.3-70b-versatile",
+        "model": "llama-3.3-8b-versatile",
     },
     "Mistral": {
         "key": "MISTRAL_API_KEY",
