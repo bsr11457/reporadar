@@ -2,7 +2,7 @@ import os
 import json
 import requests
 from dotenv import load_dotenv
-from .redaction import redact_secrets
+from redaction import redact_secrets
 
 load_dotenv()
 
