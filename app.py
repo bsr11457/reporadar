@@ -1,11 +1,11 @@
 import streamlit as st
 from pathlib import Path
 
-from src.security import extract_zip_safely, MAX_ARCHIVE_BYTES
-from src.parser import analyze_project, analyze_pasted_python
-from src.graph import build_import_graph, graph_figure
-from src.redaction import redact_secrets
-from src.llm import explain_code, generate_review, generate_tests, generate_roadmap
+from security import extract_zip_safely, MAX_ARCHIVE_BYTES
+from parser import analyze_project, analyze_pasted_python
+from graph import build_import_graph, graph_figure
+from redaction import redact_secrets
+from llm import explain_code, generate_review, generate_tests, generate_roadmap
 
 st.set_page_config(page_title="RepoRadar", page_icon="🧠", layout="wide")
 
